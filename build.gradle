@@ -29,5 +29,13 @@ task clean(type: Delete) {
 // Define versions in a single place
 // Ref: https://github.com/googlesamples/android-architecture/blob/dev-todo-mvvm-rxjava/todoapp/build.gradle
 ext {
+
+    // App dependencies
+    // Deliberately held back to avoid conflicts w/AAC deps
+    supportLibraryVersion = '27.1.1'
+
+    constraintLayoutVer = '1.1.2'
+
+    // AAC (Android Architecture Components)/Jetpack
     aacNavigationVer = '1.0.0-alpha02'
 }
