@@ -1,4 +1,4 @@
-package com.example.navtemplate
+package com.example.navtemplate.activity
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -8,6 +8,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.example.navtemplate.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
