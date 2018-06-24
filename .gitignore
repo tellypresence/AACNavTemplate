@@ -63,4 +63,10 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# Android Studio
+.DS_Store
+
+# Custom
 sh.exe.stackdump
+.idea/
