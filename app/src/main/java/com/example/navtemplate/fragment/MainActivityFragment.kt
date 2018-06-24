@@ -16,6 +16,7 @@ class MainActivityFragment : Fragment() {
 
     lateinit var rootView: View
     val buttonDummy by lazy { button_dummy_nav }
+    val buttonDummyList by lazy { button_dummy_list_nav }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -27,7 +28,9 @@ class MainActivityFragment : Fragment() {
         super.onResume()
         buttonDummy.setOnClickListener {
             Navigation.findNavController(rootView).navigate(R.id.action_mainActivityFragment_to_gameOver)
-
+        }
+        buttonDummyList.setOnClickListener {
+            Navigation.findNavController(rootView).navigate(R.id.action_mainActivityFragment_to_dummyListFrag)
         }
     }
 }

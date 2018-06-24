@@ -1,5 +1,6 @@
 package com.example.navtemplate.activity
 
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v4.view.GravityCompat
@@ -11,15 +12,28 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.navtemplate.R
+import com.example.navtemplate.fragment.dummy.DummyItemDetailFrag
+import com.example.navtemplate.fragment.dummy.DummyListFrag
+import com.example.navtemplate.fragment.dummy.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),
+        DummyListFrag.OnDummyListFragInteractionListener,
+        DummyItemDetailFrag.OnDummyDetailFragInteractionListener {
 
     private val TAG = MainActivity::class.java.simpleName
 
     lateinit var navController: NavController
     val navigationView by lazy { nav_view }
+
+    override fun onDummyListFragInteraction(item: DummyContent.DummyItem?) {
+        Log.d(TAG, "onDummyListFragInteraction(): $item")
+    }
+
+    override fun onDummyDetailFragInteraction(uri: Uri) {
+        Log.d(TAG, "onDummyDetailFragInteraction(): $uri")
+    }
 
     override fun onSupportNavigateUp(): Boolean {
         Log.d(TAG, "onSupportNavigateUp()")

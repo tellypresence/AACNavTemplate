@@ -30,10 +30,15 @@ dependencies {
     implementation "android.arch.navigation:navigation-ui-ktx:$aacNavigationVer"
     implementation "android.arch.navigation:navigation-runtime-ktx:$aacNavigationVer"
 
+    // e.g. androidx.core.os.bundleOf
+    implementation 'androidx.core:core-ktx:0.3'
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVer"
     implementation "com.android.support:design:$supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:${rootProject.supportLibraryVersion}"
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'

@@ -13,10 +13,27 @@
         <action
             android:id="@+id/action_mainActivityFragment_to_gameOver"
             app:destination="@id/gameOver" />
+        <action
+            android:id="@+id/action_mainActivityFragment_to_dummyListFrag"
+            app:destination="@id/dummyListFrag" />
     </fragment>
     <fragment
         android:id="@+id/gameOver"
         android:name="com.example.navtemplate.fragment.dummy.GameOver"
         android:label="fragment_game_over"
         tools:layout="@layout/fragment_game_over" />
+    <fragment
+        android:id="@+id/dummyListFrag"
+        android:name="com.example.navtemplate.fragment.dummy.DummyListFrag"
+        android:label="frag_dummyitem_list"
+        tools:layout="@layout/frag_dummyitem_list" >
+        <action
+            android:id="@+id/action_dummyListFrag_to_dummyItemDetailFrag"
+            app:destination="@id/dummyItemDetailFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/dummyItemDetailFrag"
+        android:name="com.example.navtemplate.fragment.dummy.DummyItemDetailFrag"
+        android:label="frag_dummy_item_detail"
+        tools:layout="@layout/frag_dummy_item_detail" />
 </navigation>

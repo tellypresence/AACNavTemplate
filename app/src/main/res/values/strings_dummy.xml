@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="button_label_dummy_nav">Go to dummy frag</string>
+    <string name="button_label_dummy_nav">Go to &quot;Game Over&quot;</string>
     <string name="button_label_dummy_list_nav">Go to dummy list</string>
+
+    <string name="menu_label_dummy_nav">&quot;Game Over&quot; via AAC nav</string>
+    <string name="menu_label_dummy_list_nav">dummy list via AAC nav</string>
 
     <!-- AAC demo github project -->
     <string name="game_over">Game Over</string>

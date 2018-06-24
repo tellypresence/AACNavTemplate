@@ -9,20 +9,12 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="GameOver via AAC nav" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/action_mainActivityFragment_to_dummyListFrag"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Dummy list frag via AAC nav" />
     </group>
 
-    <item android:title="Communicate">
+    <!-- item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
@@ -33,6 +25,6 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
         </menu>
-    </item>
+    </item -->
 
 </menu>

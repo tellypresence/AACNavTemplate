@@ -6,4 +6,14 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_mainActivityFragment_to_gameOver"
+        android:orderInCategory="100"
+        android:title="@string/menu_label_dummy_nav"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_mainActivityFragment_to_dummyListFrag"
+        android:orderInCategory="100"
+        android:title="@string/menu_label_dummy_list_nav"
+        app:showAsAction="never" />
 </menu>
