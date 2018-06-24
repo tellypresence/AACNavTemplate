@@ -5,9 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/action_mainActivityFragment_to_gameOver"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="GameOver via AAC nav" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_label_dummy_nav">Go to dummy frag</string>
+    <string name="button_label_dummy_list_nav">Go to dummy list</string>
+
+    <!-- AAC demo github project -->
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again?</string>
+
+</resources>

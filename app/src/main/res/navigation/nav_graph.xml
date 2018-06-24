@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivityFragment">
 
+    <fragment
+        android:id="@+id/mainActivityFragment"
+        android:name="com.example.navtemplate.fragment.MainActivityFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainActivityFragment_to_gameOver"
+            app:destination="@id/gameOver" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOver"
+        android:name="com.example.navtemplate.fragment.dummy.GameOver"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
 </navigation>
