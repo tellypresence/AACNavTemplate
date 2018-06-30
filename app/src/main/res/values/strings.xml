@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="main_descr">This app demonstrates integration of AAC/Jetpack &quot;Navigation&quot; component\n\n
-    * Overflow menu items as per https://issuetracker.google.com/issues/110507712\n
-    * Buttons work repeatedly (big hint: don\'t use &quot;by lazy&quot; init!)
+    * Overflow menu items as per\n
+        https://issuetracker.google.com/issues/110507712\n
+    * Buttons work repeatedly (big hint: don\'t use &quot;by lazy&quot; init!) as per\n
+        https://issuetracker.google.com/issues/110950258\n
     </string>
 </resources>
