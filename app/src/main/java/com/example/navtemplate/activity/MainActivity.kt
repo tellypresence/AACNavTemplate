@@ -11,6 +11,7 @@ import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.onNavDestinationSelected
 import com.example.navtemplate.R
 import com.example.navtemplate.fragment.dummy.DummyItemDetailFrag
 import com.example.navtemplate.fragment.dummy.DummyListFrag
@@ -95,7 +96,9 @@ class MainActivity : AppCompatActivity(),
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
             R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+            // Update for AAC/Jetpack "Navigation" component
+            //      Ref: https://issuetracker.google.com/issues/110507712
+            else -> return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
         }
     }
 }
