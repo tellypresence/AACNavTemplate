@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.navigation.Navigation
 import com.example.navtemplate.R
 import kotlinx.android.synthetic.main.fragment_main.*
@@ -15,12 +16,17 @@ import kotlinx.android.synthetic.main.fragment_main.*
 class MainActivityFragment : Fragment() {
 
     lateinit var rootView: View
-    val buttonDummy by lazy { button_dummy_nav }
-    val buttonDummyList by lazy { button_dummy_list_nav }
+    // "by lazy" is EVIL:
+    //      https://issuetracker.google.com/issues/110950258
+    //      https://www.bignerdranch.com/blog/kotlin-when-to-use-lazy-or-lateinit/
+    lateinit var buttonDummy : Button
+    lateinit var buttonDummyList : Button
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         rootView = inflater.inflate(R.layout.fragment_main, container, false)
+        buttonDummy = rootView.findViewById(R.id.button_dummy_nav)
+        buttonDummyList = rootView.findViewById(R.id.button_dummy_list_nav)
         return rootView
     }
 
