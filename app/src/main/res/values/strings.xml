@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main_descr">This app demonstrates issues with AAC/Jetpack &quot;Navigation&quot; component\n\n
-    * Overflow menu items do nothing\n
-      To verify, open overflow menu and attempt to navigate using one of the items.\n\n
-    * Buttons only work once
-      To reproduce:\n
-        - press one of the below buttons\n
-        - from the desination screeen press the toolbar up button, or system back button\n
-        - after returning to this screen, press the button again\n
-        Expect that nothing will happen when either button pressed second and subsequent times\n\n
-        Note: navigation via nav drawer items works repeatedly from app launch, even if buttons have stopped working
+    <string name="main_descr">This app demonstrates integration of AAC/Jetpack &quot;Navigation&quot; component\n\n
+    * Overflow menu items as per https://issuetracker.google.com/issues/110507712\n
+    * Buttons work repeatedly (big hint: don\'t use &quot;by lazy&quot; init!)
     </string>
 </resources>
