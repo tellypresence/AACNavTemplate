@@ -1,7 +1,13 @@
 # AACNavTemplate
 Template "Navigation Drawer" application integrating AAC/Jetpack "Navigation" component
 
-## Purpose
+## Introduction
+
+### AndroidX
+Now uses AndroidX, better interoperability with wizard projects and components (activites, fragments)
+from Android Studio "New" menu
+
+### Purpose
 Starting point for new projects, saving a number of fiddly modifications to get started
 with AAC/Jetpack "Navigation" component
 
