@@ -39,13 +39,13 @@ dependencies {
     implementation "android.arch.navigation:navigation-runtime-ktx:$aacNavigationVer"
 
     // e.g. androidx.core.os.bundleOf
-    implementation 'androidx.core:core-ktx:1.0.0-alpha1'
+    implementation 'androidx.core:core-ktx:1.0.0-beta01'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$supportLibraryVersion"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVer"
     implementation "com.google.android.material:material:$supportLibraryVersion"
-    implementation "androidx.recyclerview:recyclerview:${rootProject.supportLibraryVersion}"
+    implementation "androidx.recyclerview:recyclerview:$supportLibraryVersion"
 
     testImplementation "junit:junit:$junitVer"
     androidTestImplementation "androidx.test:runner:$testRunnerVer"

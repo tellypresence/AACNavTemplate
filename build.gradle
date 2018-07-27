@@ -32,7 +32,7 @@ ext {
 
     // App dependencies
     // Deliberately held back to avoid conflicts w/AAC deps
-    supportLibraryVersion = '1.0.0-alpha1'
+    supportLibraryVersion = '1.0.0-beta01'
 
     // https://androidstudio.googleblog.com/2018/06/constraintlayout-200-alpha-1.html
     constraintLayoutVer = '1.1.2'
