@@ -32,10 +32,10 @@ ext {
 
     // App dependencies
     // Deliberately held back to avoid conflicts w/AAC deps
-    supportLibraryVersion = '27.1.1'
+    supportLibraryVersion = '1.0.0-alpha1'
 
     // https://androidstudio.googleblog.com/2018/06/constraintlayout-200-alpha-1.html
-    constraintLayoutVer = '2.0.0-alpha1'
+    constraintLayoutVer = '1.1.2'
 
     // AAC (Android Architecture Components)/Jetpack
     // Check latest versions: https://developer.android.com/jetpack/docs/release-notes
