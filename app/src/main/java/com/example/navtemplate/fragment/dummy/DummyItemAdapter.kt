@@ -1,12 +1,12 @@
 package com.example.navtemplate.fragment.dummy
 
-import androidx.appcompat.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
+import androidx.recyclerview.widget.RecyclerView
 import com.example.navtemplate.R
 import com.example.navtemplate.fragment.dummy.DummyItemDetailFrag.Companion.ARG_KEY_CONTENT
 import com.example.navtemplate.fragment.dummy.DummyItemDetailFrag.Companion.ARG_KEY_DUMMY_ID

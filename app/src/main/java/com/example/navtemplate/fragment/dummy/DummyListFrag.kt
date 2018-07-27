@@ -2,13 +2,13 @@ package com.example.navtemplate.fragment.dummy
 
 import android.content.Context
 import android.os.Bundle
-import androidx.core.app.Fragment
-import androidx.appcompat.widget.GridLayoutManager
-import androidx.appcompat.widget.LinearLayoutManager
-import androidx.appcompat.widget.RecyclerView
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.navtemplate.R
 
 import com.example.navtemplate.fragment.dummy.dummy.DummyContent

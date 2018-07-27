@@ -2,7 +2,6 @@ package com.example.navtemplate.activity
 
 import android.net.Uri
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
